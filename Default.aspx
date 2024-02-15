@@ -13,7 +13,7 @@
         <h1>Preventivo Auto</h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="dropdown col-md-6">
                     <label for="ddlAuto">Seleziona auto:</label>
                     <asp:DropDownList ID="ddlAuto" runat="server" 
                           DataSourceID="dsAuto" DataTextField="Modello" 
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="btn btn-secondary col-md-12">
                     <asp:Button ID="btnCalcola" runat="server" Text="Calcola preventivo" 
                         OnClick="btnCalcola_Click" />
                 </div>
